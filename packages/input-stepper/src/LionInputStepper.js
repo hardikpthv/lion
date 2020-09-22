@@ -117,11 +117,11 @@ export class LionInputStepper extends LionInput {
    * @private
    */
   __keyDownHandler(e) {
-    if (e.key === 'ArrowUp') {
+    if (e.key === 'ArrowUp' || e.key === 'Home') {
       this.__increment();
     }
 
-    if (e.key === 'ArrowDown') {
+    if (e.key === 'ArrowDown' || e.key === 'End') {
       this.__decrement();
     }
   }
